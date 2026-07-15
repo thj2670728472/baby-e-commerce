@@ -1,0 +1,214 @@
+{
+	"pages": [
+		{
+			"path": "pages/Splash/Splash",
+			"style": {
+				"navigationBarTitleText": "custom",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Like/Like",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		
+		{
+			"path": "pages/Category/Category",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/Article/Article",
+			"style": {
+				"navigationBarTitleText": "文章"
+			}
+		},
+		{
+			"path": "pages/ArticleDetail/ArticleDetail",
+			"style": {
+				"navigationBarTitleText": "文章详情"
+			}
+		},
+		{
+		  "path": "pages/Article/AllArticles",
+		  "style": { "navigationBarTitleText": "全部文章", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Myhome/Myhome",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+		  "path": "pages/AI/AIChat",
+		  "style": { "navigationBarTitleText": "AI育儿助手", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Chat/Chat",
+			"style": {
+				"navigationBarTitleText": "问题咨询"
+				
+			}
+		},
+		{
+			"path": "pages/Index/Index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/GoodsDetail/GoodsDetail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Orders/Orders",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Orders/OrderConfirm",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Orders/OrderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+		  "path": "pages/Cart/Cart",
+		  "style": { "navigationBarTitleText": "购物车", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Favorite/Favorite",
+			"style": {
+				"navigationBarTitleText": "收藏",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+		  "path": "pages/Coupon/Coupon",
+		  "style": { "navigationBarTitleText": "优惠券", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Orders/Logistics",
+			"style": {
+				"navigationBarTitleText": "物流详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+		  "path": "pages/Coupon/Records",
+		  "style": { "navigationBarTitleText": "抽取记录", "navigationStyle": "custom" }
+		},
+		{
+		  "path": "pages/Coupon/MyCoupons",
+		  "style": { "navigationBarTitleText": "我的优惠券", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Orders/Review",
+			"style": {
+				"navigationBarTitleText": "商品评价",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Address/Address",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		},
+		{
+			"path": "pages/Address/AddAddress",
+			"style": {
+				"navigationBarTitleText": "新增地址"
+			}
+		},
+		{
+		  "path": "pages/Points/Points",
+		  "style": { "navigationBarTitleText": "积分中心", "navigationStyle": "custom" }
+		},
+
+		{
+		  "path": "pages/Points/Records",
+		  "style": { "navigationBarTitleText": "积分记录", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Myhome/Profile",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+		  "path": "pages/Goods/Reviews",
+		  "style": { "navigationBarTitleText": "全部评价", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/Myhome/babyStatus",
+			"style": {
+				"navigationBarTitleText": "婴儿状况"
+			}
+		},
+		{
+			"path": "pages/Myhome/ChangePassword",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationStyle": "custom"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff6b6b",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/Like/Like",
+				"iconPath": "static/首页1.png",
+				"selectedIconPath": "static/首页2.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/Category/Category",
+				"iconPath": "static/分类1.png",
+				"selectedIconPath": "static/分类2.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/Article/Article",
+				"iconPath": "static/购物车1.png",
+				"selectedIconPath": "static/购物车2.png",
+				"text": "文章"
+			},
+			{
+				"pagePath": "pages/Myhome/Myhome",
+				"iconPath": "static/我的1.png",
+				"selectedIconPath": "static/我的2.png",
+				"text": "我的"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

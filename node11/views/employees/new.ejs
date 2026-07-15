@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>添加员工</title>
+    <link rel='stylesheet' href='/stylesheets/editform.css' />
+</head>
+
+<body>
+    <!-- <h1>用户信息</h1>
+    <a href="/users">返回</a> -->
+    <div class="edit-container">
+        <div class="header">
+            <h1>个人信息编辑</h1>
+            <p>请填写您的详细信息</p>
+        </div>
+        <form id="editForm" action="/employees/save" method="POST">
+            <div class="form-group">
+                <label for="name" class="required">姓名</label>
+                <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+            </div>
+
+            <div class="form-group">
+                <label for="title" class="required">职位</label>
+                <input type="text" id="title" name="title" placeholder="请输入您的岗位" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="department" class="required">部门</label>
+                <select id="department" name="department" required>
+                    <option value="">请选择部门</option>
+                    <% departments.forEach(dept=> { %>
+                        <option value="<%= dept.value %>"                             >
+                            <%= dept.name %>
+                        </option>
+                        <% }); %>
+                </select>
+            </div>
+            <div class="button-group">
+                <button type="button" class="btn btn-secondary" onclick="back()">返回</button>
+                <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+        </form>
+        <div class="form-footer">
+            <p>带 <span style="color: #e74c3c;">*</span> 的字段为必填项</p>
+        </div>
+    </div>
+    <script>
+        function back(){
+            location.href='/employees'
+        }
+    </script>
+</body>
+
+</html>

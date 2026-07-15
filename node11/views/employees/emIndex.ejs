@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/table.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="employees/new">创建用户</a>
+
+
+    <table>
+      <thead>
+        <tr>
+          <td>姓名</td>
+          <td>职位</td>
+          <td>部门</td>
+          <td>操作</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% lists.forEach(item=>{%>
+          <tr>
+            <td><%=item.name%></td>
+            <td><%=item.title%></td>
+            <td><% const dep=departments.find(d=>d.value===item.department) %>   
+              <%= dep?dep.name:'部门名称未知' %></td>
+            <td><a href="employees/edit/<%=item.id%>">修改</a> | <a onclick="return isDeleted()" href="employees/delete/<%=item.id%>">删除</a></td>
+          </tr>
+          <%})%>
+      </tbody>
+    </table>
+<script>
+  function isDeleted(){
+    let rtn=confirm('是否删除该记录?');
+    return rtn;
+  }
+</script>
+  </body>
+</html>

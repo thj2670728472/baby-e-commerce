@@ -1,0 +1,43 @@
+# ==================== Node.js ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==================== 生产构建 ====================
+dist/
+build/
+*.tsbuildinfo
+
+# ==================== 环境变量 ====================
+.env
+.env.local
+.env.*.local
+
+# ==================== IDE ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ==================== 日志 ====================
+logs/
+*.log
+
+# ==================== UniApp 构建产物 ====================
+uniapp11/unpackage/
+uniapp11/dist/
+
+# ==================== 上传文件 ====================
+node11/public/uploads/avatars/*
+node11/public/uploads/chat/*
+!node11/public/uploads/avatars/.gitkeep
+!node11/public/uploads/chat/.gitkeep
+
+# ==================== 操作系统 ====================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
